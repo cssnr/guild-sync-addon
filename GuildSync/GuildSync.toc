@@ -1,0 +1,5 @@
+## Interface: 20502
+## Title: Guild Sync
+## Notes: Sync Guild Members to Discord
+## SavedVariables: GuildSyncDB
+GuildSync.lua

@@ -68,15 +68,6 @@ frame:SetScript("OnEvent", function(self, event, arg1)
     elseif event == "GUILD_ROSTER_UPDATE" and arg1 == true then
         print("GUILD_ROSTER_UPDATE")
         DoGuildFullSync()
---    elseif event == "PLAYER_GUILD_UPDATE" then
---        print("PLAYER_GUILD_UPDATE")
---        print(arg1)
---        if GuildSyncGuildUpdateC == nil then
---            print("FIRST RUN: PLAYER_GUILD_UPDATE")
---            GuildDyncGuildUpdateC = 1
---        elseif GuildSyncGuildUpdateC > 1 then
---            DoGuildFullSync()
---        end
 
     end
 end)

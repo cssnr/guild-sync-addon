@@ -4,6 +4,10 @@ frame:RegisterEvent("GUILD_ROSTER_UPDATE")
 
 function GetGuildFullName()
     local guildName, guildRankName, guildRankIndex = GetGuildInfo("player");
+    if guildName == nil then
+        print("Guild API not available yet.")
+        return
+    end
     return guildName .. "-" .. GetRealmName()
 end
 
@@ -21,6 +25,9 @@ function DoGuildFullSync()
         return
     end
     local guild = GetGuildFullName()
+    if guild == nil then
+        return
+    end
     print("Starting sync for guild: " .. guild)
     GuildSyncDB["guilds"][guild] = {}
     local numTotalMembers, _, _ = GetNumGuildMembers();

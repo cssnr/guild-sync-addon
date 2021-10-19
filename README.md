@@ -2,4 +2,8 @@
 
 WoW Classic Addon for Guild Sync.
 
-Coming soon...
+[https://guildsync.cc/](https://guildsync.cc/)
+
+Download Latest: [GuildSync.zip](https://github.com/cssnr/guild-sync-addon/releases/latest/download/GuildSync.zip)
+
+Or head over to the [Releases page](https://github.com/cssnr/guild-sync-addon/releases).
